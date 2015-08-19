@@ -35,7 +35,7 @@ Reinventing the wheel
   - toArray
   - size
   - partition
-Arrays
+- Arrays
   - first
   - initial
   - last
@@ -56,7 +56,7 @@ Arrays
   - findIndex
   - findLastIndex
   - range
-Functions
+- Functions
   - bind
   - bindAll
   - partial
@@ -71,7 +71,7 @@ Functions
   - wrap
   - negate
   - compose
-Objects
+- Objects
   - keys
   - allKeys
   - values
@@ -104,7 +104,7 @@ Objects
   - isNaN
   - isNull
   - isUndefined
-Utility
+- Utility
   - noConflict
   - identity
   - constant
