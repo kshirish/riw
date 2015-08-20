@@ -23,6 +23,41 @@ define(function () {
         			}
         		}
         	}
+        },
+        keys: function (obj) {
+            return Object.keys(obj);
+        },
+        allKeys: function(obj) {
+            
+            var keys = [];
+
+            for(var key in obj) {
+                keys.push(key);
+            }
+
+            return keys;
+        },
+        values: function() {
+
+            var values = [];
+
+            for(var key in obj) {
+                if(Object.hasOwnProperty(key)) {
+                    values.push(obj.key);    
+                }
+            }
+
+            return values;
+        },
+        mapObject: function(obj, iteratee, context) {
+
+            for(var key in obj ) {
+                if(Object.hasOwnProperty(key)) {
+                    obj.key = iteratee.call(context, obj.key, key);
+                }                
+            }
+
+            return obj;
         }
     };
 });

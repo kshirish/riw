@@ -59,6 +59,7 @@ Reinventing the wheel
 - Functions
   - bind
   - bindAll
+  - curry
   - partial
   - memoize
   - delay
@@ -76,8 +77,6 @@ Reinventing the wheel
   - allKeys
   - values
   - mapObject
-  - pairs
-  - invert
   - create
   - findKey
   - extend

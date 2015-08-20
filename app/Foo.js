@@ -7,6 +7,8 @@ define(function (require) {
 	*/
 
     var Events = require('./Foo.Events');
+    var Arrays = require('./Foo.Arrays');
+    var Objects = require('./Foo.Objects');
 
 	/**
 	*	`lib` modules can be loaded like 
