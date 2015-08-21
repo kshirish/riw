@@ -105,13 +105,13 @@ Reinventing the wheel
   - ~~isNull~~
   - ~~isUndefined~~
 - Utility
-  - noConflict
-  - identity
-  - constant
-  - noop
-  - times
-  - random
-  - uniqueId
+  - ~~noConflict~~
+  - ~~identity~~
+  - ~~constant~~
+  - ~~noop~~
+  - ~~times~~
+  - ~~random~~
+  - ~~uniqueId~~
   - escape
   - unescape
   - template
