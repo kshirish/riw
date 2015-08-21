@@ -59,7 +59,7 @@ Reinventing the wheel
 - Functions
   - bind
   - bindAll
-  - curry
+  - ~~curry~~
   - partial
   - memoize
   - delay
@@ -72,38 +72,38 @@ Reinventing the wheel
   - wrap
   - negate
   - compose
-- Objects
-  - keys
-  - allKeys
-  - values
-  - mapObject
-  - create
-  - findKey
-  - extend
-  - extendOwn
-  - pick
-  - clone
-  - has
-  - copy
-  - property
-  - propertyOf
-  - isEqual
-  - isMatch
-  - isEmpty
-  - isElement
-  - isArray
-  - isObject
-  - isArguments
-  - isFunction
-  - isString
-  - isNumber
-  - isFinite
-  - isBoolean
-  - isDate
-  - isRegExp
-  - isNaN
-  - isNull
-  - isUndefined
+- **~~Objects~~**
+  - ~~keys~~
+  - ~~allKeys~~
+  - ~~values~~
+  - ~~mapObject~~
+  - ~~create~~
+  - ~~findKey~~
+  - ~~extend~~
+  - ~~extendOwn~~
+  - ~~pick~~
+  - ~~clone~~
+  - ~~has~~
+  - ~~copy~~
+  - ~~property~~
+  - ~~propertyOf~~
+  - ~~isEqual~~
+  - ~~isMatch~~
+  - ~~isEmpty~~
+  - ~~isElement~~
+  - ~~isArray~~
+  - ~~isObject~~
+  - ~~isArguments~~
+  - ~~isFunction~~
+  - ~~isString~~
+  - ~~isNumber~~
+  - ~~isFinite~~
+  - ~~isBoolean~~
+  - ~~isDate~~
+  - ~~isRegExp~~
+  - ~~isNaN~~
+  - ~~isNull~~
+  - ~~isUndefined~~
 - Utility
   - noConflict
   - identity
