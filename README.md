@@ -84,6 +84,7 @@ Reinventing the wheel
   - pick
   - clone
   - has
+  - copy
   - property
   - propertyOf
   - isEqual
