@@ -3,7 +3,7 @@ Reinventing the wheel
 
 `Foo` is a fat-stubborn framework designed to offer more than it can.
 
-- Foo()
+- ~~Foo()~~
 - Foo.Model
 - Foo.Events
 - Foo.Router

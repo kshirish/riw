@@ -16,36 +16,44 @@ define(function() {
         },
         extend: function(dest) {
 
-            var sources = Array.prototype.slice.call(arguments, 1);
+            var sources;
+            
+            if(dest instanceof Object) {
 
-            for (var i = 0; i < sources.length; i++) {
+                sources = Array.prototype.slice.call(arguments, 1);
 
-                if (this.isThis('Object', dest) && this.isThis('Object', sorurces[i])) {
-                    for (var key in sorurces[i]) {
-                        dest.key = sorurces[i].key;
-                    }
-                }
-            }
+                for (var i = 0; i < sources.length; i++) {
 
-            return dest;
-        },
-        extendOwn: function(dest) {
-
-            var sources = Array.prototype.slice.call(arguments, 1);
-
-            for (var i = 0; i < sources.length; i++) {
-
-                if (this.isThis('Object', dest) && this.isThis('Object', sorurces[i])) {
-                    for (var key in sorurces[i]) {
-                        if (sorurces[i].hasOwnProperty(key)) {
+                    if (source[i] instanceof Object) {
+                        for (var key in sorurces[i]) {
                             dest.key = sorurces[i].key;
                         }
                     }
                 }
             }
 
-            return dest;
-        }
+        },
+        extendOwn: function(dest) {
+
+            var sources;
+
+            if(dest instanceof Object) {
+
+                sources = Array.prototype.slice.call(arguments, 1);
+
+                for (var i = 0; i < sources.length; i++) {
+
+                    if (source[i] instanceof Object) {
+                        for (var key in sorurces[i]) {
+                            if (sorurces[i].hasOwnProperty(key)) {
+                                dest.key = sorurces[i].key;
+                            }
+                        }
+                    }
+                }
+            }
+
+        },
         keys: function(obj) {
             return Object.keys(obj);
         },
