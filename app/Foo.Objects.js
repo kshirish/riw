@@ -24,9 +24,9 @@ define(function() {
 
                 for (var i = 0; i < sources.length; i++) {
 
-                    if (source[i] instanceof Object) {
-                        for (var key in sorurces[i]) {
-                            dest.key = sorurces[i].key;
+                    if (sources[i] instanceof Object) {
+                        for (var key in sources[i]) {
+                            dest[key] = sources[i][key];
                         }
                     }
                 }
@@ -43,10 +43,10 @@ define(function() {
 
                 for (var i = 0; i < sources.length; i++) {
 
-                    if (source[i] instanceof Object) {
-                        for (var key in sorurces[i]) {
-                            if (sorurces[i].hasOwnProperty(key)) {
-                                dest.key = sorurces[i].key;
+                    if (sources[i] instanceof Object) {
+                        for (var key in sources[i]) {
+                            if (sources[i].hasOwnProperty(key)) {
+                                dest[key] = sources[i][key];
                             }
                         }
                     }
@@ -73,7 +73,7 @@ define(function() {
 
             for (var key in obj) {
                 if (obj.hasOwnProperty(key)) {
-                    values.push(obj.key);
+                    values.push(obj[key]);
                 }
             }
 
@@ -83,7 +83,7 @@ define(function() {
 
             for (var key in obj) {
                 if (obj.hasOwnProperty(key)) {
-                    obj.key = iteratee.call(context, obj.key, key);
+                    obj[key] = iteratee.call(context, obj[key], key);
                 }
             }
 
@@ -99,7 +99,7 @@ define(function() {
 
             for (var key in obj) {
                 if (obj.hasOwnProperty(key)) {
-                    if (predicate.call(context, obj.key)) {
+                    if (predicate.call(context, obj[key])) {
                         return key;
                     }
                 }
@@ -114,8 +114,8 @@ define(function() {
 
                 for (var key in obj) {
 
-                    if (obj.hasOwnProperty(key) && predicate(obj.key, key, obj)) {
-                        returnObj.key = obj.key;
+                    if (obj.hasOwnProperty(key) && predicate(obj[key], key, obj)) {
+                        returnObj[key] = obj[key];
                     }
                 }
 
@@ -177,12 +177,12 @@ define(function() {
         },
         property: function(key) {
             return function(obj) {
-                return obj.key;
+                return obj[key];
             };
         },
         propertyOf: function(key) {
             return function(obj) {
-                return obj.key;
+                return obj[key];
             };
         },
         isEmpty: function(obj) {
@@ -316,7 +316,7 @@ define(function() {
 
             for(var key in properties) {
                 if(properties.hasOwnProperty(key)) {
-                    if(properties.key !== obj.key) {
+                    if(properties[key] !== obj[key]) {
                         return false;
                     }
                 }
