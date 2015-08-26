@@ -17,11 +17,8 @@ define(function (require) {
     	return parentEl.querySelectorAll(selectorString);
     };
 
-debugger;
     // extend
     Objects.extendOwn(Foo, Objects);
-
-    console.log(Foo);
     Objects.extendOwn(Foo, Arrays);
     Objects.extendOwn(Foo, Util);
     Objects.extendOwn(Foo, Functions);

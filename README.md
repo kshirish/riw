@@ -5,7 +5,7 @@ Reinventing the wheel
 
 - ~~Foo()~~
 - Foo.Model
-- Foo.Events
+- ~~Foo.Events~~
 - Foo.Router
 - Foo.View
 - Foo.Ajax
