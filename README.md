@@ -36,26 +36,21 @@ Reinventing the wheel
   - size
   - partition
 - Arrays
-  - first
-  - initial
-  - last
-  - rest
-  - compact
+  - ~~first~~
+  - ~~initial~~
+  - ~~last~~
+  - ~~rest~~
+  - ~~compact~~
   - flatten
-  - without
+  - ~~without~~
   - union
   - intersection
-  - difference
-  - uniq
-  - zip
-  - unzip
-  - object
-  - indexOf
-  - lastIndexOf
-  - sortedIndex
-  - findIndex
-  - findLastIndex
-  - range
+  - ~~uniq~~
+  - ~~object~~
+  - ~~indexOf~~
+  - ~~lastIndexOf~~
+  - ~~findIndex~~
+  - ~~findLastIndex~~
 - Functions
   - bind
   - bindAll
